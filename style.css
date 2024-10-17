@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.nav-icon{
+    width: 50px;
+    border-radius: 15px;
+}
+
+.nav-item a{
+    font-size: x-large;
+}
+
+.btn-download{
+    background: linear-gradient(90deg,blue, rgb(102, 102, 253));
+}
+
+.accordion{
+    --bs-accordion-active-bg: rgb(102, 9, 27);
+    --bs-accordion-active-color: white;
+    --bs-accordion-btn-bg: rgb(48, 42, 42);
+    --bs-accordion-btn-focus-box-shadow: 0 0 5px rgb(102, 9, 27);
+}
