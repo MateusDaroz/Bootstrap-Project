@@ -22,3 +22,18 @@ body{
     --bs-accordion-btn-bg: rgb(48, 42, 42);
     --bs-accordion-btn-focus-box-shadow: 0 0 5px rgb(102, 9, 27);
 }
+
+.btn{
+    --bs-btn-bg: rgb(102,9,27);
+    --bs-btn-border-color: rgb(102, 9, 27);
+    --bs-btn-hover-bg: rgb(59, 5, 16);
+    --bs-btn-hover-border-color: rgb(59, 5, 16);
+    --bs-btn-active-bg: rgb(151, 15, 42);
+    --bs-btn-active-border-color: rgb(151, 15, 42);
+}
+
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 4/4;
+    object-fit:fill;
+}
