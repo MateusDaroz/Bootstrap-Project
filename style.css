@@ -32,8 +32,20 @@ body{
     --bs-btn-active-border-color: rgb(151, 15, 42);
 }
 
+.form-check-input{
+}
+
+.form-check-input:checked{
+    background-color: rgb(151,15,42);
+    border-color: rgb(151,15,42);
+}
+
 .card-img-top {
     width: 100%;
     aspect-ratio: 4/4;
     object-fit:fill;
+}
+
+.carousel-item img{
+    aspect-ratio: 16/9;
 }

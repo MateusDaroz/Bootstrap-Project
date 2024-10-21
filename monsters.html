@@ -24,23 +24,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Monsters</a>
+            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-emoji-angry"></i> Monsters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="faq.html"><i class="bi bi-patch-question-fill"></i> FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="suggestion.html">Suggest</a>
+            <a class="nav-link" href="suggestion.html"><i class="bi bi-send"></i> Suggest</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container text-center">
+  <div class="container text-center my-3">
     <div class="row">
       <div class="col h1">
         Monsters
@@ -57,7 +57,7 @@
               <h5 class="card-title">Bunker Spider</h5>
               <p class="card-text">They are territorial ambush creatures, and when an Employee touches one of their webs
                 or gets too close, they become hostile and start attacking.</p>
-              <a href="#" class="btn btn-primary">More Details</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#spiderModal">More Details</a>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
             <div class="card-body">
               <h5 class="card-title">Bracken</h5>
               <p class="card-text">They are vicious predators capable of treading in near silence, constantly hunting down the closest player to them. If not careful, Brackens can easily sneak up behind a player to snap their neck and drag them away from the scene. However, if looked at, they get shy and quickly scurry away, but if they are looked at for too long, they become highly aggressive.</p>
-              <a href="#" class="btn btn-primary">More Details</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#brackenModal">More Details</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
             <div class="card-body">
               <h5 class="card-title">Coil-Head</h5>
               <p class="card-text">They are eyeless mannequins with agape mouths, no forearms and a flexible spring for a neck. Their bodies are punctured with nails that are surrounded by what seem to be stains of blood. Coil-Heads are difficult to counter when alone as they must always be looked at to avoid potential death, more especially if you're dealing with another harmful entity at the same time.</p>
-              <a href="#" class="btn btn-primary">More Details</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coilModal">More Details</a>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
             <div class="card-body">
               <h5 class="card-title">Nutcracker</h5>
               <p class="card-text">As the name implies, they are large nutcracker soldier figurines that are typically on the move. They roam until they find an Employee. They will scan the area for any movement, and if the Employee is seen moving, they will be shot at. When Nutcrackers are killed, they drop a double-barreled shotgun, which can be loaded, and two guaranteed Shotgun Shells upon death.</p>
-              <a href="#" class="btn btn-primary">More Details</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nutcrackerModal">More Details</a>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
             <div class="card-body">
               <h5 class="card-title">Barber</h5>
               <p class="card-text">These faceless creatures follow a Master Barber's beat to move and attack players, jumping forward on a snare hit and slicing in half anything that collide with their scissors. They are the only entities that are typically invisible when far away, but are still able to be seen by all players when they get close to a player unlike the Ghost Girl, which can only be seen by one player.</p>
-              <a href="#" class="btn btn-primary">More Details</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#barberModal">More Details</a>
             </div>
           </div>
         </div>
@@ -114,13 +114,257 @@
             <div class="card-body">
               <h5 class="card-title">Snare Flea</h5>
               <p class="card-text">They use their silk to stick on ceilings and wait there patiently for their next kill. When an Employee walks under it or near it, they will drop down and wrap themselves on the Employee's head to suffocate them.</p>
-              <a href="#" class="btn btn-primary">More Details</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#snareModal">More Details</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+ 
 
+<div class="modal fade" id="spiderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bunker Spider</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="spiderCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.gameskinny.com/wp-content/uploads/2023/11/lethal-company-how-to-survive-and-beat-bunker-spider.jpg?w=1200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/lethal-company/b/bf/Lethal-company-spider.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.squarespace-cdn.com/content/v1/64ee4d43126c653b251eab96/1d10eda6-88c7-484f-a58b-6e1f535e3137/Bunker-Spider.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#spiderCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#spiderCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i>Sigurd's danger level: 30%</i>
+        <i>Scientific name: Dolus-scolopendra</i>
+        <i>A very large arthropod of the class <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://en.wikipedia.org/wiki/Centipede">Chilopoda</a>. Its body produces a silk which it primarily uses to propel itself to places where it is concealed. Its exoskeleton is somewhat fragile, and they can die from long falls. The snare flea does not produce venom, nor does it have a strong bite. It makes up for this weakness with its ability to tighten itself around large prey to suffocate.</i>
+        <i>Bunker spiders produce silk and lay it around their chosen nesting area, then wait for it to be tripped on. They can be seen waiting on walls, often over doorways where prey could enter unaware. If you find a bunker spider 'unprepared' it may freeze as a defensive reaction. In this case they are best left alone. If a bunker spider reacts aggressively, it is best not to fight with ordinary tools. They use their webs to make up for their rather slow movement, so take note of your surroundings. Their webs can be broken easily with any blunt tool.</i>
+        <i>Bunker spiders can pose a great danger to humans and urban explorers especially, without a great benefit to their ecosystems. A resulting kill-on-sight order has been informally agreed upon between many states home to the Bunker spider, and it is currently approved by the ITDA as of 10/6/1965.</i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="brackenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bracken</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="brackenCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://us-tuna-sounds-images.voicemod.net/ce4f8d0b-7503-44d0-a084-1b01063d5ff1-1702781893228.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1702478034225-3C3YKIDKUAWFT0XHUSUF/Bracken+aka+Flower+Man+Lethal+Company.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://criticalhits.com.br/wp-content/uploads/2023/11/How-To-Survive-Flower-Man-Bracken-In-Lethal-Company-1-696x392.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#brackenCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#brackenCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i>Sigurd's danger level: 70%</i>
+        <i>Scientific name: Rapax-folium</i>
+        <i>There is debate on the genus to which the Bracken belongs. It is a bipedal vertebrate with skin the color and texture of a red beet. The name is coined for what appear to be leaves protruding from its upper spine. The purpose of these is believed to be for intimidation, however not much is known about the specifics of bracken behavior due to its elusiveness and low population.</i>
+        <i>We know a little from accounts by wildlife experts who have encountered it. It is a lone hunter with high intelligence. Its behavior can seem aloof; it exhibits high aggression even when unprovoked, yet quickly backs off when confronted. However, brackens are known to up their hostility when cornered or simply watched for a long time. It's theorized that upon death their bodies undergo a rapid decomposition process which is unique from other large animals.</i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="coilModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Coil-Head</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="coilCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://media.assettype.com/afkgaming%2F2023-11%2Fb0cba9f8-3632-4e23-8123-e190d20d472a%2Fwork_5_.png?auto=format%2Ccompress&dpr=1.0&w=1200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://staticg.sportskeeda.com/editor/2023/11/b44e6-17009190964932-1920.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://twinfinite.net/wp-content/uploads/2023/11/lethal-company-coil-head.jpg?fit=1200%2C675" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#coilCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#coilCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i>Sigurd's danger level: 80%</i>
+        <i>Scientific name: Vir colligerus</i>
+        <i>Vir colligerus, or colloquially named Coil-heads, are a recent discovery and have not been studied extensively due to their extreme unpredictability and dangerous properties. They have been known to combust into flames when being dissected or even deactivated, and they carry</i>
+        <i>dangerously high levels of radioactive particles. Due to this and other reasons, it has been highly speculated they were created as biological weapons of war, although this has not been proven.</i>
+        <i>Coil-heads' visual appearance is that of a bloody mannequin with its head connected by a spring. Their defining behavioral characteristic is to stop when being looked at. However, this does not appear to be a hard-and-fast rule. When they encounter a loud noise or bright light they appear to enter a long reset mode. Just stare at htem or use a stun grenade! - Sigurd</i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="nutcrackerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bracken</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="nutcrackerCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://voxelsmash.com/wp-content/uploads/2023/12/lethal-company-nutcracker-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.gameskinny.com/wp-content/uploads/2023/12/lethal-company-nutcracker-survival-guide.jpg?resize=768,432" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://actustream.fr/img/article/nutcracker-lethal1703333945.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#nutcrackerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#nutcrackerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i>The guardians of the house.</i>
+        <i>They watch with one tireless eye, which only senses movement; It remembers the last creature it noticed, whether they are moving or not.</i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="barberModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Barber</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="barberCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://dotesports.com/wp-content/uploads/2024/06/Lethal-Company-side-view-of-Barber.jpg?w=640" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ytimg.com/vi/RJl3LGmgWSk/maxresdefault.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.gameskinny.com/wp-content/uploads/2024/07/Barber-Lethal-Company.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#barberCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#barberCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          <i>One day he made me a wig</i>
+          <i>Because his scissors were too big</i>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="snareModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Snare Flea</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="snareCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://steamuserimages-a.akamaihd.net/ugc/2464102871165295945/7A1B10CE1D37B89F9CC3C866F15D2C1F5411B6C8/" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://steamuserimages-a.akamaihd.net/ugc/2206262366710800134/95C3BFDA39E1FD1B0BAC3569DD2E9714D2327E8C/" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://actustream.fr/img/Lethal-Company-Comment-survivre-vaincre-Snare-Fleas.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#snareCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#snareCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i>Sigurd's danger level: 70%</i>
+        <i>Scientific name: Rapax-folium</i>
+        <i>The snare flea thrives in dark, warm areas. It cannot survive low temperatures and generally avoids open air and sunlight take the rats outside or just beat the hell otu of them! i think their insides could make a good milkshake</i>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
