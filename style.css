@@ -13,7 +13,16 @@ body{
 }
 
 .btn-download{
-    background: linear-gradient(90deg,blue, rgb(102, 102, 253));
+    border-color: black;
+    transition: 1s ;
+    background: linear-gradient(90deg,rgb(19,132,181),rgb(15,38,87), rgb(16,29,46));
+    background-size: 400% 400%;
+}
+
+.btn-download:hover{
+    border-color: black;
+    transform: scale(1.10);
+    animation: border-gradient 3s infinite;
 }
 
 .accordion{
@@ -32,9 +41,6 @@ body{
     --bs-btn-active-border-color: rgb(151, 15, 42);
 }
 
-.form-check-input{
-}
-
 .form-check-input:checked{
     background-color: rgb(151,15,42);
     border-color: rgb(151,15,42);
@@ -43,9 +49,25 @@ body{
 .card-img-top {
     width: 100%;
     aspect-ratio: 4/4;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .carousel-item img{
     aspect-ratio: 16/9;
+}
+
+.cards-guide{
+    background-color: rgb(48, 42, 42);
+}
+
+@keyframes border-gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
