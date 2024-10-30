@@ -27,3 +27,20 @@
       }, false);
   });
 })();
+
+let slider = document.getElementById("range-details");
+let value = document.querySelector(".value");
+value.innerHTML = slider.value + "/10"; // Display the default slider value
+
+function calcValue() {
+  valuePercentage = (slider.value / slider.max)*100;
+    slider.style.background = `linear-gradient(to right, #66091B ${valuePercentage}%, #212529 ${valuePercentage}%)`;
+}
+
+// Update the current slider value (each time you drag the slider handle)
+slider.addEventListener('input', function(){
+  calcValue();
+  value.textContent = this.value + "/10"; 
+})
+
+calcValue();

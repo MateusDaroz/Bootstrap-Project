@@ -13,16 +13,26 @@ body{
 }
 
 .btn-download{
-    border-color: black;
-    transition: 1s ;
-    background: linear-gradient(90deg,rgb(19,132,181),rgb(15,38,87), rgb(16,29,46));
+    /*
+    border: none;
+    color: white;
+    padding: 1em;
+    transition: 1s;
+    font-size: 1rem;
+    font-weight: .5em;
+    */
+    transition: 1s;
+    background: linear-gradient(to right,rgb(19,132,181),rgb(15,38,87), rgb(16,29,46));
     background-size: 400% 400%;
 }
 
 .btn-download:hover{
-    border-color: black;
     transform: scale(1.10);
     animation: border-gradient 3s infinite;
+}
+
+.btn-download, .btn-download:active, .btn-download:hover{
+    border: initial;
 }
 
 .accordion{
@@ -30,6 +40,58 @@ body{
     --bs-accordion-active-color: white;
     --bs-accordion-btn-bg: rgb(48, 42, 42);
     --bs-accordion-btn-focus-box-shadow: 0 0 5px rgb(102, 9, 27);
+}
+
+.range-style{
+    width: 100%;
+    appearance: none;
+    border-radius: 10px;
+    height: .7em;
+    background: #212529;
+    outline: none;
+}
+
+.range-style::-webkit-slider-thumb {
+    appearance: none; 
+    width: 1em; 
+    height: 1em; 
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.range-style::-moz-range-thumb {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background: white; 
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+.form-control:focus{
+    border-color: rgb(102,9,27);
+    box-shadow: 0 0 0 .25rem rgba(59, 5, 16, .5);
+    outline: 0;
+}
+
+.form-check-input:focus{
+    border-color: rgb(151, 15, 42);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(59, 5, 16, .5);
+}
+
+[data-bs-theme=dark] .accordion-button::after{
+    --bs-accordion-btn-icon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaklEQVR4nO2SSwqAMAwFew3BRbGLtnj/c3ikESGC+ClN6kKhA9kkeQMpda7zTYAR8A15DwzHxgQsQDLIkmTDeRBlMCtksZjRSKt3qVhUX0MhYHmax6BZdidolu0AWURbZfcGQLj8s85/WAH0wK3PpTUK2gAAAABJRU5ErkJggg==);
+    --bs-accordion-btn-active-icon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaklEQVR4nO2SSwqAMAwFew3BRbGLtnj/c3ikESGC+ClN6kKhA9kkeQMpda7zTYAR8A15DwzHxgQsQDLIkmTDeRBlMCtksZjRSKt3qVhUX0MhYHmax6BZdidolu0AWURbZfcGQLj8s85/WAH0wK3PpTUK2gAAAABJRU5ErkJggg==);
+}
+
+[data-bs-theme=dark] .carousel .carousel-control-next-icon{
+    filter: brightness(100);
+}
+
+[data-bs-theme=dark] .carousel .carousel-control-prev-icon{
+    filter: brightness(100);
 }
 
 .btn{
@@ -57,7 +119,17 @@ body{
 }
 
 .cards-guide{
+    transition: 1s;
+    border-radius: 20px;
     background-color: rgb(48, 42, 42);
+}
+
+.cards-guide:hover{
+    transform: scale(1.05);
+}
+
+.gray-text{
+    color: #9ba3a3;
 }
 
 @keyframes border-gradient {
